@@ -1,0 +1,34 @@
+//REGISTER USER
+POST http://localhost:5000/api/v1/auth/register
+Content-Type: application/json
+
+{
+    "username": "Nayeon",
+    "email": "nayeon@gmail.com",
+    "password": "test123",
+    "name": "Nayeon"
+}
+
+###
+//LOGIN USER
+POST http://localhost:5000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "username": "roihan12",
+    "password": "test123"
+}
+
+###
+//LOGOUT USER
+POST http://localhost:5000/api/v1/auth/logout
+
+###
+//CREATE POST
+POST http://localhost:5000/api/v1/posts
+Content-Type: application/json
+
+{
+    "description": "from testing"
+
+}
