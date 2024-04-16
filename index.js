@@ -4,6 +4,7 @@ import postRoutes from "./routes/posts.js";
 import commentRoutes from "./routes/comments.js";
 import likeRoutes from "./routes/likes.js";
 import authRoutes from "./routes/auth.js";
+import relationshipRoutes from "./routes/relationship.js";
 import "dotenv/config";
 import cors from "cors";
 import cookieParser from "cookie-parser";
@@ -31,7 +32,7 @@ app.use(
   })
 );
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, "public")));
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -55,6 +56,7 @@ app.use("/api/v1/posts", postRoutes);
 app.use("/api/v1/likes", likeRoutes);
 app.use("/api/v1/comments", commentRoutes);
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/relationships", relationshipRoutes);
 
 app.listen("5000", () => {
   console.log("server listening on http://localhost:5000");
