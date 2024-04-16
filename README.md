@@ -1,6 +1,6 @@
 # 📱 Hope - Social Media App
 
-Chatify is a realtime chat app built with Vite, React, TypeScript, Firebase, and other technologies. This chat app is purposefully made for the web, like a web chat app, but it also works on mobile devices.
+This repository contains a full-stack social media application built using React.js for the frontend and MySQL for the backend. The app allows users to create accounts, post updates, follow other users, and interact with posts through likes and comments.
 
 ## 🚀 Features
 
